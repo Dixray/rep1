@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Оформление заказа</title>
+	<meta name="robots" content="noindex, nofollow"/>
+	<link rel="stylesheet"  media="screen" href="styles.css" >
+    <link rel="shortcut icon" type="image/x-icon" href="images/3_little.jpg">
+</head>
+<body>
+<div class="title1">
+<h2>На данной странице вы можете оставить отзыв</h2>
+</div>
+<form class="contact_form" action="save.php" method="post">
+	<p>
+            <label for="name">Имя:</label>
+            <input type="text"  name="name" placeholder="Введите ваше имя" required pattern ="^[а-яА-Яa-zA-Z]+$"/>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Введите электронный адрес" required pattern ="^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$"/>
+        </p>
+        <p>
+            <label for="tel">Телефон:</label>
+            <input type="tel" name="tel" placeholder="Введите номер телефона" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$"/>
+        </p>
+        <p>
+            <label for="message">Поле для отзыва:</label>
+            <textarea name="message" cols="40" rows="6" placeholder="Отзыв" required></textarea>
+        </p>
+		<input name="bezspama" type="text" style="display:none" value="" />
+        <p>
+        	<button class="submit" type="submit">Отправить сообщение</button>
+        </p>
+</form>
+<form class="button">
+<p>
+<input type="button" value="Вернуться на главную страницу" onclick="location.href='index.html';">
+</p>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

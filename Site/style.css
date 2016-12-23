@@ -1,0 +1,223 @@
+#toTop {
+	background-color: #FF8C00;
+	border: 1px solid #FF8C00;
+	border-bottom: 1px solid #FF8C00;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 9px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	cursor:pointer;
+	display:none;
+	color: red;
+	font-family:Lobster, cursive;
+	font-size:12px;
+	opacity: 0.8;
+}
+.tb
+{
+	margin-left: 2.5%;
+}
+.contacts
+{
+	color: white;
+	font-size: 10pt;
+	text-align: left;
+	font-family:Helvetica, sans-serif;
+	margin-left: 10px;
+	text-shadow: black 2px 0 0px, black 0 2px 0px, black -2px 0 0px, black 0 -2px 0px;
+}
+.head
+{
+	color: white;
+	font-size: 10pt;
+	margin-left: 20px;
+	text-align: left;
+	font-family:Helvetica, sans-serif;
+			text-shadow: black 2px 0 0px, black 0 2px 0px, black -2px 0 0px, black 0 -2px 0px;
+
+}
+.footer
+{
+	text-align: center;
+	font-family:Helvetica, sans-serif;
+	font-size: 10pt;
+	margin: 0% 5% 0% 5%;
+	color: white;
+	text-shadow: black 2px 0 0px, black 0 2px 0px, black -2px 0 0px, black 0 -2px 0px;
+}
+.cols{
+float: left;
+font-family:Helvetica, sans-serif;
+color: white;
+}
+.container
+{
+width: 100%;
+margin: 0 auto;
+}
+
+.container  .cols.col-3 
+{
+text-indent: 2.5%;
+margin: 1% 1% 1% 1%;
+text-align: left;
+width: 46.5%;
+padding: 3px;
+border: 2px solid orange;
+}
+.container  .cols.col-1 
+{
+text-indent: 2.5%;
+margin: 1% 1% 1% 1%;
+text-align: left;
+width: 96%;
+padding: 3px;
+border: 2px solid orange;
+}
+
+
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clear:before,
+.clear:after{
+content: " ";
+display: table;
+}
+.container:after,
+.row:after,
+.clear:after {
+clear:both;
+}
+
+body {
+background-image: url(background.jpg);
+background-position: center;
+background-repeat: no-repeat; 
+background-attachment: fixed;
+background-size: cover;
+} 
+
+/* nav */
+.nav {
+	position: relative;
+	margin: 20px 0;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.nav a {
+	padding: 3px 12px;
+	font-size: 14pt;
+	text-decoration: none;
+	color: orange;
+	line-height: 100%;
+		text-shadow: black 2px 0 0px, black 0 2px 0px, black -2px 0 0px, black 0 -2px 0px;
+}
+.nav a:hover {
+	color: white;
+	background: black;
+	color: #fff;
+	border-radius: 5px;
+}
+/* правый nav */
+.nav.right ul {
+	text-align: right;
+}
+
+/* центральный nav */
+.nav.center ul {
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.nav {
+		position: relative;
+		min-height: 40px;
+	}	
+	.nav ul {
+		width: 180px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px #aaa;
+		background: black url(images/icon-menu.png) no-repeat 10px 11px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+	.nav li {
+		display: none; /* скройте все элементы &lt;li&gt; */
+		margin: 0;
+	}
+	.nav .current {
+		display: block; /* показывайте только текущий элемент &lt;li&gt; */
+	}
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+				text-shadow: none;
+	}
+	.nav .current a {
+		background: none;
+		color: orange;
+	}
+
+	/* при проведении мышью */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+
+	/* по правой стороне */
+	.nav.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	/*по центру */
+	.nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+}
+
+
+@media only screen and (max-width: 1000px),
+only screen and (max-device-width: 1000px){
+.container  .cols.col-3 
+{
+	width: 95%;
+	margin: 1% 1% 1% 1%;
+}
+
+
+
+
+
+
+
+
+
+
